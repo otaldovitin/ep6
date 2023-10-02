@@ -24,4 +24,17 @@ body{
 
 grid_top{
     grid-area: top;
+    font-size: 20px;/* tamanho da fonte */
+    text-align: justify; /* alinha o texto */
+    margin-left: 23%; /* muda a margem da esquerta para 23% */
+    margin-right: 23%; /* muda a margem da direita para 23% */
+    width: 55%; /* tamanho do quadrado onde fica os textos */
+    text-indent: 50px; /* começo de parágrafos */
+    border: 4px solid orange; /* borda do quadrado dos textos*/
+    padding-left: 2rem; /* espaço entre os textos e a borda na esquerda */
+    padding-right: 2rem; /* espaço entre os textos e a borda na direita */
+    padding-top: 1rem; /* espaço entre os textos e a borda em cima */
+    padding-bottom: 2rem; /* espaço entre os textos e a borda em baixo*/
+    background-color: #dccbb5; /* cor do fundo do quadrado*/
+    border-radius: 3rem; /* arredondar a borda */
 }
