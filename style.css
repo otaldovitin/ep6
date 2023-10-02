@@ -22,7 +22,7 @@ body{
         "low low low low";
 }
 
-grid_mid{
+.grid_mid{
     grid-area: mid;
     font-size: 20px;/* tamanho da fonte */
     text-align: justify; /* alinha o texto */
