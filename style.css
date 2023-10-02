@@ -1,0 +1,27 @@
+* {
+    margin: 0%;
+    /* Altera o espaçamento externo*/
+    padding: 0%;
+    /* Altera o espaçamento interno*/
+    box-sizing: border-box;
+    /* A borda na largura e na altura ficará totlamente preenchida no elemento.*/
+    font-family: 'Inter', sans-serif;
+    /* Altera a fonte*/
+}
+
+body{
+    display: grid;
+    /* Divide o layout em grade */
+    grid-template-columns: auto auto auto auto;
+    /* Aplica uma divisão de colunas no layout */
+    grid-template-rows: 0.3fr 0.1fr auto auto;
+    /* Aplica uma divisão de linhas no layout*/
+    grid-template-areas:
+        "top top top top"
+        "mid mid mid mid"
+        "low low low low";
+}
+
+grid_top{
+    grid-area: top;
+}
