@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: orange;
     display: grid;
     /* Divide o layout em grade */
     grid-template-columns: auto auto auto auto;
