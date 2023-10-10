@@ -24,7 +24,7 @@ body{
 }
 
 .grid_mid{
-    grid-area: mid;
+    grid-area: mid; /* define a area do grid */
     font-size: 20px;/* tamanho da fonte */
     text-align: center justify; /* alinha o texto */
     margin-left: 13%; /* muda a margem da esquerta para 23% */
@@ -40,7 +40,7 @@ body{
 }
 
 .grid_top{
-    grid-area: top;
+    grid-area: top; /* define a area do grid */
     display: flex;
     justify-content: center;
     height: 120px;
