@@ -20,6 +20,7 @@ body{
     grid-template-areas:
         "top top top top"
         "mid mid mid mid"
+        "mid mid mid mid"
         "low low low low";
 }
 
@@ -30,8 +31,19 @@ body{
 }
 .grid_top{
     display: flex;
-    padding-left: 110rem;
+   
 }
+
+.grid_top button{
+    margin-left: 80rem;
+}
+
+.grid_top img{
+    width: 30rem;
+    
+}
+
+
 
 .grid_mid{
     
