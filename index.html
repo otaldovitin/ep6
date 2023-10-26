@@ -1,34 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="javascript.js">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Thermodynamic</title>
 </head>
+
 <body>
     <header class="grid_top">
+        <nav class="button">
+            <a href="questoesobj.html"><button>QUESTOES</button></a>
+        </nav>
 
     </header>
+    <p id="nome_usuario"></p>
     <main class="grid_mid">
-        <h1 id="titulo">Introdução à Termodinâmica</h1> 
+        <h1 id="titulo">Introdução à Termodinâmica</h1>
         <br>
-        <p>A Termodinâmica foi criada em 1650, por Otto Von Guericke (1602-1686), um físico alemão notabilizado pelo estudo do vácuo e da eletrostática, e podemos dizer que é o estudo das leis que regem as relações entre calor, trabalho e temperatura, bem como as transformações sofridas pela energia. A termodinâmica estuda o intercâmbio de energia entre sistemas macroscópicos, formados por um grande número de partículas, como os gases, fluidos e sólidos, recorrendo à análise de importantes grandezas físicas, como pressão, volume e temperatura. Uma das ideias centrais da termodinâmica é a relação entre calor e trabalho mecânico: a partir dessa relação foi possível que construíssemos máquinas térmicas cada vez mais eficientes e úteis, como a máquina a vapor e os motores de combustão interna.</p>
+
+        <p>A Termodinâmica foi criada em 1650, por Otto Von Guericke (1602-1686), um físico alemão notabilizado pelo
+            estudo do vácuo e da eletrostática, e podemos dizer que é o estudo das leis que regem as relações entre
+            calor, trabalho e temperatura, bem como as transformações sofridas pela energia. A termodinâmica estuda o
+            intercâmbio de energia entre sistemas macroscópicos, formados por um grande número de partículas, como os
+            gases, fluidos e sólidos, recorrendo à análise de importantes grandezas físicas, como pressão, volume e
+            temperatura. Uma das ideias centrais da termodinâmica é a relação entre calor e trabalho mecânico: a partir
+            dessa relação foi possível que construíssemos máquinas térmicas cada vez mais eficientes e úteis, como a
+            máquina a vapor e os motores de combustão interna.</p>
         <br><br>
         <h2>Leis da Termodinâmica</h2>
-        <p>Existem quatro Leis da Termodinâmica: Lei Zero (associada ao conceito de temperatura), Primeira Lei (relacionada ao conceito de energia), Segunda Lei (associada ao conceito de entropia) e a Terceira Lei (relacionada ao limite constante da entropia quando a temperatura Kelvin se aproxima de zero):</p><br>
-        <p>De acordo com a <b>Lei Zero da Termodinâmica</b>, “dois corpos em equilíbrio com um terceiro, ou seja possuem a mesma temperatura, estão em equilíbrio térmico entre si". O que significa que se os corpos tiverem a mesma temperatura não haverá perda ou ganho de temperatura.</p>
-        <p>A <b>Primeira Lei da Termodinâmica</b> é, então, uma Lei da Conservação da Energia, podendo ser enunciado: A variação da Energia interna ΔU de um sistema é expressa por meio da diferença entre a quantidade de calor Q trocada com o meio ambiente e o trabalho W realizado durante a transformação.
-            Se o calor trocado com o meio for maior do que 0, o sistema recebe calor. Se o calor trocado com o meio for menor do que 0, o sistema perde calor. Se não há troca de calor com o meio, ou seja, se ele é igual a 0, o sistema não recebe nem perde calor.</p> 
-        <p>Ja a <b>Segunda Lei da Termodinâmica</b> diz que: “O calor não pode fluir, de forma espontânea, de um corpo de temperatura menor, para um outro corpo de temperatura mais alta". Então um corpo de temperatura menor sempre recebe temperatura de um com maior, e não o contrário</p>
-        <p>Por fim, a <b>Terceira Lei da Termodinâmica</b> apresenta que: toda vez que um sistema estiver próximo do zero absoluto (“0” na escala Kelvin e “-273.75” em graus Celsius) a entropia dele será constante ou igual a zero.</p>
+        <br>
+        <p>Existem quatro Leis da Termodinâmica: Lei Zero (associada ao conceito de temperatura), Primeira Lei
+            (relacionada ao conceito de energia), Segunda Lei (associada ao conceito de entropia) e a Terceira Lei
+            (relacionada ao limite constante da entropia quando a temperatura Kelvin se aproxima de zero):</p><br>
+        <p>De acordo com a <b>Lei Zero da Termodinâmica</b>, “dois corpos em equilíbrio com um terceiro, ou seja possuem
+            a mesma temperatura, estão em equilíbrio térmico entre si”.</p>
+
+        <img id="img-interativa" src="imagem/zero1.png" onmouseover="mudarImagem()" onmouseout="restaurarImagem()" />
+
+
+        <p>A <b>Primeira Lei da Termodinâmica</b> é, então, uma Lei da Conservação da Energia, podendo ser enunciado: A
+            variação da Energia interna ΔU de um sistema é expressa por meio da diferença entre a quantidade de calor Q
+            trocada com o meio ambiente e o trabalho W realizado durante a transformação.
+            Se o calor trocado com o meio for maior do que 0, o sistema recebe calor. Se o calor trocado com o meio for
+            menor do que 0, o sistema perde calor. Se não há troca de calor com o meio, ou seja, se ele é igual a 0, o
+            sistema não recebe nem perde calor.</p>
+        <br>
+
+        <img class="imgs" src="imagem/1°lei.jpg" alt="">
+
+        <p>Ja a <b>Segunda Lei da Termodinâmica</b> diz que: “O calor não pode fluir, de forma espontânea, de um corpo
+            de temperatura menor, para um outro corpo de temperatura mais alta.”</p>
+        <br>
+
+        <img class="imgs2" src="imagem/2°lei.png" alt="">
+
+
+
+        <p>Por fim, a <b>Terceira Lei da Termodinâmica</b> apresenta que: toda vez que um sistema estiver próximo do
+            zero absoluto (“0” na escala Kelvin e “-273.75” em graus Celsius) a entropia dele será constante ou igual a
+            zero.</p>
+
+            <img class="imgs2" src="imagem/3°lei.gif" alt="">
+
         <br><br>
         <h1 class="titulo">Fórmulas da Termodinâmica</h1><br>
-        <p>Para a execução correta da Teoria da Termodinâmica, é preciso que as fórmulas referentes a cada lei sejam aprendidas e compreendidas, para uma precisão exata de cálculo. Sendo assim, para sua total compreensão veja a tabela a seguir:</p>
-    </main>
-    <footer class="grid_low">
+        <p>Para a execução correta da Teoria da Termodinâmica, é preciso que as fórmulas referentes a cada lei sejam
+            aprendidas e compreendidas, para uma precisão exata de cálculo. Sendo assim, para sua total compreensão veja
+            a tabela a seguir:</p>
+            <br><br>
+            <img src="imagem/tabela1.png" alt="" class="imgs2">
+            <br><br>
+            <img src="imagem/tabela2.png" alt="" class="imgs2">
+            <br><br>
+            <img src="imagem/tabela3.png" alt="" class="imgs2">
+            
 
+    </main>
+
+    <footer class="grid_low">
     </footer>
-    
+
 </body>
+
+<script src="JS/imginterativa.js"></script>
+
 </html>
