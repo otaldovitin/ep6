@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
+<head> <!--representa comandos com propriedades especiais para o site-->
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/style.css">
-    <title>Thermodynamic</title>
+    <link rel="stylesheet" href="CSS/style.css"> <!--link o site ao css-->
+    <title>Thermodynamic</title> <!--titulo-->
+    <link rel="shortcut icon" href="imagem/icon.png" type="Imagens/icon"> <!-- define a imagem do simbolo do server -->
 </head>
 
-<body>
-    <header class="grid_top">
-        <nav class="button">
-            <a href="questoesobj.html"><button>QUESTOES</button></a>
+<body> 
+    <header class="grid_top"> <!--o header representa a parte superiora do site-->
+        <nav class="button"> <!--cria um botao-->
+            <a href="questoesobj.html"><button>QUESTOES</button></a> <!--linka a pagina teorica a de perguntas-->
         </nav>
 
     </header>
-    <p id="nome_usuario"></p>
-    <main class="grid_mid">
-        <h1 id="titulo">Introdução à Termodinâmica</h1>
-        <br>
+    <p id="nome_usuario"></p> <!--e aonde aparece o nome do usuario-->
+    <main class="grid_mid"> <!--parte central e principal do site-->
+        <h1 id="titulo">Introdução à Termodinâmica</h1> <!--cria um texto maior para o titulo-->
+        <br> <!--cria um espaçamento-->
 
         <p>A Termodinâmica foi criada em 1650, por Otto Von Guericke (1602-1686), um físico alemão notabilizado pelo
             estudo do vácuo e da eletrostática, e podemos dizer que é o estudo das leis que regem as relações entre
@@ -26,17 +27,17 @@
             gases, fluidos e sólidos, recorrendo à análise de importantes grandezas físicas, como pressão, volume e
             temperatura. Uma das ideias centrais da termodinâmica é a relação entre calor e trabalho mecânico: a partir
             dessa relação foi possível que construíssemos máquinas térmicas cada vez mais eficientes e úteis, como a
-            máquina a vapor e os motores de combustão interna.</p>
-        <br><br>
-        <h2>Leis da Termodinâmica</h2>
+            máquina a vapor e os motores de combustão interna.</p> <!--texto usando o p para criar um paragrafo-->
+        <br><br> <!--dois espaços-->
+        <h2>Leis da Termodinâmica</h2> <!--o h2 faz o mesmo que o h1 mas uma letra menor-->
         <br>
         <p>Existem quatro Leis da Termodinâmica: Lei Zero (associada ao conceito de temperatura), Primeira Lei
             (relacionada ao conceito de energia), Segunda Lei (associada ao conceito de entropia) e a Terceira Lei
             (relacionada ao limite constante da entropia quando a temperatura Kelvin se aproxima de zero):</p><br>
         <p>De acordo com a <b>Lei Zero da Termodinâmica</b>, “dois corpos em equilíbrio com um terceiro, ou seja possuem
-            a mesma temperatura, estão em equilíbrio térmico entre si”.</p>
+            a mesma temperatura, estão em equilíbrio térmico entre si”.</p> <!--o b de bold presente nesse paragrafo deixa o texto em negrito-->
 
-        <img id="img-interativa" src="imagem/zero1.png" onmouseover="mudarImagem()" onmouseout="restaurarImagem()" />
+        <img id="img-interativa" src="imagem/zero1.png" onmouseover="mudarImagem()" onmouseout="restaurarImagem()" /> <!--adiciona imagem da lei zero-->
 
 
         <p>A <b>Primeira Lei da Termodinâmica</b> é, então, uma Lei da Conservação da Energia, podendo ser enunciado: A
@@ -44,45 +45,46 @@
             trocada com o meio ambiente e o trabalho W realizado durante a transformação.
             Se o calor trocado com o meio for maior do que 0, o sistema recebe calor. Se o calor trocado com o meio for
             menor do que 0, o sistema perde calor. Se não há troca de calor com o meio, ou seja, se ele é igual a 0, o
-            sistema não recebe nem perde calor.</p>
+            sistema não recebe nem perde calor.</p> <!-- paragrafo -->
         <br>
 
-        <img class="imgs" src="imagem/1°lei.jpg" alt="">
+        <img class="imgs" src="imagem/1°lei.jpg" alt=""> <!--adiciona imagem da primeira lei-->
 
         <p>Ja a <b>Segunda Lei da Termodinâmica</b> diz que: “O calor não pode fluir, de forma espontânea, de um corpo
-            de temperatura menor, para um outro corpo de temperatura mais alta.”</p>
+            de temperatura menor, para um outro corpo de temperatura mais alta.”</p> <!--paragrafo-->
         <br>
 
-        <img class="imgs2" src="imagem/2°lei.png" alt="">
+        <img class="imgs2" src="imagem/2°lei.png" alt=""> <!--adiciona imagem da segunda lei-->
 
 
 
         <p>Por fim, a <b>Terceira Lei da Termodinâmica</b> apresenta que: toda vez que um sistema estiver próximo do
             zero absoluto (“0” na escala Kelvin e “-273.75” em graus Celsius) a entropia dele será constante ou igual a
-            zero.</p>
+            zero.</p> <!--paragrafo-->
 
-            <img class="imgs2" src="imagem/3°lei.gif" alt="">
+            <img class="imgs2" src="imagem/3°lei.gif" alt=""> <!--adiciona imagem da terceira lei-->
 
         <br><br>
         <h1 class="titulo">Fórmulas da Termodinâmica</h1><br>
         <p>Para a execução correta da Teoria da Termodinâmica, é preciso que as fórmulas referentes a cada lei sejam
             aprendidas e compreendidas, para uma precisão exata de cálculo. Sendo assim, para sua total compreensão veja
-            a tabela a seguir:</p>
+            a tabela a seguir:</p> <!--paragrafo-->
             <br><br>
-            <img src="imagem/tabela1.png" alt="" class="imgs2">
+            <img src="imagem/tabela1.png" alt="" class="imgs2"> <!--adiciona imagem de uma tabela-->
             <br><br>
-            <img src="imagem/tabela2.png" alt="" class="imgs2">
+            <img src="imagem/tabela2.png" alt="" class="imgs2"> <!--adiciona imagem de uma tabela-->
             <br><br>
-            <img src="imagem/tabela3.png" alt="" class="imgs2">
+            <img src="imagem/tabela3.png" alt="" class="imgs2"> <!--adiciona imagem de uma tabela-->
             
 
     </main>
 
-    <footer class="grid_low">
+    <footer class="grid_low"> <!--o footer representa a parte inferior do site-->
+        <p id="text_footer"><b>Fontes:</b><br><a href="https://www.todamateria.com.br/termodinamica/">Toda Matéria</a>,<a href="https://mundoeducacao.uol.com.br/fisica/lei-zero-termodinamica.htm">Mundo educação</a>,<a href="https://brasilescola.uol.com.br/fisica/termodinamica.htm">Brasil Escola</a></p> <!--o a href serve para criar um link nesse caso para outra pagina nao pertencente ao site-->
     </footer>
 
 </body>
 
-<script src="JS/imginterativa.js"></script>
+<script src="JS/imginterativa.js"></script> <!--adiciona o javascript-->
 
 </html>
