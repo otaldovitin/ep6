@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Thermodynamic</title>
+</head>
+<body class="bodyalt">
+    <div class="container">
+        <h1 id="title">Perguntas Discursivas de Termodinâmica com Dicas</h1>
+
+        <div class="question">
+            <label>Pergunta 1: Calcule o trabalho realizado por um gás quando uma força de 50 N é aplicada a ele em uma distância de 10 metros na mesma direção da força.</label>
+            <input type="number" id="answer11" placeholder="Sua resposta">
+            <button onclick="showHint(1)">Dica</button>
+            <div class="hint" id="hint1">Dica: Use a fórmula Trabalho = Força x Distância.</div>
+        </div>
+
+        <div class="question">
+            <label>Pergunta 2: Calcule a eficiência térmica de uma máquina térmica que realiza 4000 J de trabalho útil e recebe 8000 J de calor.</label>
+            <input type="number" id="answer12" placeholder="Sua resposta">
+            <button onclick="showHint(2)">Dica</button>
+            <div class="hint" id="hint2">Dica: Use a fórmula Eficiência = (Trabalho Útil / Calor Total Fornecido) x 100%.</div>
+        </div>
+
+        <div class="question">
+            <label>Pergunta 3: Um gás tem um volume inicial de 2 m³ e é comprimido para um volume final de 0,5 m³. Se a pressão inicial é de 200 kPa, qual é a pressão final do gás após a compressão?</label>
+            <input type="number" id="answer13" placeholder="Sua resposta">
+            <button onclick="showHint(3)">Dica</button>
+            <div class="hint" id="hint3">Dica: Use a Lei de Boyle-Mariotte: P1 * V1 = P2 * V2.</div>
+        </div>
+
+        <button onclick="checkAnswers()">Verificar Respostas</button>
+
+        <div id="results" style="margin-top: 20px;"></div>
+    </div>
+</body>
+<script src="JS/questoesdis.js"></script>
+</html>
