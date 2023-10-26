@@ -97,6 +97,13 @@ body{
     background-color: rgb(241, 241, 241);
 }
 
+#text_footer{
+    font-size: 24px;
+    text-indent: 38%;
+    letter-spacing: 4px;
+}
+
+
 #img-interativa{
     padding-left: 34%;
     padding-bottom:35px;
