@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head> <!--representa comandos com propriedades especiais para o site-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,53 @@
     <title>Thermodynamic</title> <!--titulo-->
     <link rel="shortcut icon" href="imagem/icon.png" type="Imagens/icon"> <!-- define a imagem do simbolo do server -->
 </head>
+
 <body class="bodyalt"> <!--representa o que aparece no site-->
     <div class="container"> <!--cria uma divisao-->
-        <h1 id="title">Perguntas Discursivas de Termodinâmica com Dicas</h1> <!--deixa letras grandes nesse caso usado para titulo-->
 
+        <h1 id="title">Perguntas Discursivas de Termodinâmica com Dicas</h1>
+        <!--deixa letras grandes nesse caso usado para titulo-->
+
+
+        <!-- Pergunta 1 -->
         <div class="question">
-            <label>Pergunta 1: Calcule o trabalho realizado por um gás quando uma força de 50 N é aplicada a ele em uma distância de 10 metros na mesma direção da força.</label> <!--adiciona um enunciado-->
-            <input type="number" id="answer11" placeholder="Sua resposta"> <!--adiciona um local para escrever a ressposta-->
-            <button onclick="showHint(1)">Dica</button> <!--adiciona um botao usado para ver uma dica-->
+            <label>Pergunta 1: Calcule o trabalho realizado por um gás quando uma força de 50 N é aplicada a ele em uma
+                distância de 10 metros na mesma direção da força.</label>
+            <input type="number" id="force1" placeholder="Força (N)">
+            <input type="number" id="distance1" placeholder="Distância (m)">
+            <button onclick="calculateWork(1)">Calcular</button>
             <div class="hint" id="hint1">Dica: Use a fórmula Trabalho = Força x Distância.</div>
+            <div id="calcWorkResult1"></div> <!-- Apresenta a resposta do calculo.-->
         </div>
 
+        <!-- Pergunta 2 -->
         <div class="question">
-            <label>Pergunta 2: Calcule a eficiência térmica de uma máquina térmica que realiza 4000 J de trabalho útil e recebe 8000 J de calor.</label> <!--adiciona um enunciado-->
-            <input type="number" id="answer12" placeholder="Sua resposta"> <!--adiciona um local para escrever a ressposta-->
-            <button onclick="showHint(2)">Dica</button> <!--adiciona um botao usado para ver uma dica-->
-            <div class="hint" id="hint2">Dica: Use a fórmula Eficiência = (Trabalho Útil / Calor Total Fornecido) x 100%.</div>
+            <label>Pergunta 2: Calcule a eficiência térmica de uma máquina térmica que realiza 4000 J de trabalho útil e
+                recebe 8000 J de calor.</label>
+            <input type="number" id="workUtil2" placeholder="Trabalho Útil (J)">
+            <input type="number" id="heatIn2" placeholder="Calor Total Fornecido (J)">
+            <button onclick="calculateEfficiency(2)">Calcular</button>
+            <div class="hint" id="hint2">Dica: Use a fórmula Eficiência = (Trabalho Útil / Calor Total Fornecido) x
+                100%.</div>
+            <div id="calcEfficiencyResult2"></div> <!-- Apresenta a resposta do calculo.-->
         </div>
 
+        <!-- Pergunta 3 -->
         <div class="question">
-            <label>Pergunta 3: Um gás tem um volume inicial de 2 m³ e é comprimido para um volume final de 0,5 m³. Se a pressão inicial é de 200 kPa, qual é a pressão final do gás após a compressão?</label> <!--adiciona um enunciado-->
-            <input type="number" id="answer13" placeholder="Sua resposta"> <!--adiciona um local para escrever a ressposta-->
-            <button onclick="showHint(3)">Dica</button> <!--adiciona um botao usado para ver uma dica-->
+            <label>Pergunta 3: Um gás tem um volume inicial de 2 m³ e é comprimido para um volume final de 0,5 m³. Se a
+                pressão inicial é de 200 kPa, qual é a pressão final do gás após a compressão?</label>
+            <input type="number" id="initialVolume3" placeholder="Volume Inicial (m³)">
+            <input type="number" id="finalVolume3" placeholder="Volume Final (m³)">
+            <input type="number" id="initialPressure3" placeholder="Pressão Inicial (kPa)">
+            <button onclick="calculatePressure(3)">Calcular</button>
             <div class="hint" id="hint3">Dica: Use a Lei de Boyle-Mariotte: P1 * V1 = P2 * V2.</div>
+            <div id="calcPressureResult3"></div> <!-- Apresenta a resposta do calculo.-->
         </div>
-
-        <button onclick="checkAnswers()">Verificar Respostas</button> <!--adiciona um botao para verificar resposta-->
-
-        <div id="results" style="margin-top: 20px;"></div> <!--apresenta os resultados das questões-->
+        <a href="index.html" class="botao-redondo2">Voltar</a>
     </div>
 </body>
 <script src="JS/questoesdis.js"></script> <!--adiciona o javascript na pagina-->
+
+</html>
+
 </html>
