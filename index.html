@@ -3,17 +3,16 @@
 
 <head> <!--representa comandos com propriedades especiais para o site-->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/style.css"> <!--link o site ao css-->
     <title>Thermodynamic</title> <!--titulo-->
     <link rel="shortcut icon" href="imagem/icon.png" type="Imagens/icon"> <!-- define a imagem do simbolo do server -->
 </head>
 
-<body> 
+<body>
     <header class="grid_top">
         <img src="imagem/logo.png" alt="">
-        <nav class="button1">
-            <a href="questoesobj.html"><button>QUESTOES</button></a>
-        </nav>
+
     </header>
     <p id="nome_usuario"></p> <!--e aonde aparece o nome do usuario-->
     <main class="grid_mid"> <!--parte central e principal do site-->
@@ -35,9 +34,11 @@
             (relacionada ao conceito de energia), Segunda Lei (associada ao conceito de entropia) e a Terceira Lei
             (relacionada ao limite constante da entropia quando a temperatura Kelvin se aproxima de zero):</p><br>
         <p>De acordo com a <b>Lei Zero da Termodinâmica</b>, “dois corpos em equilíbrio com um terceiro, ou seja possuem
-            a mesma temperatura, estão em equilíbrio térmico entre si”.</p> <!--o b de bold presente nesse paragrafo deixa o texto em negrito-->
+            a mesma temperatura, estão em equilíbrio térmico entre si”.</p>
+        <!--o b de bold presente nesse paragrafo deixa o texto em negrito-->
 
-        <img id="img-interativa" src="imagem/zero1.png" onmouseover="mudarImagem()" onmouseout="restaurarImagem()" /> <!--adiciona imagem da lei zero-->
+        <img id="img-interativa" src="imagem/zero1.png" onmouseover="mudarImagem()" onmouseout="restaurarImagem()" />
+        <!--adiciona imagem da lei zero-->
 
 
         <p>A <b>Primeira Lei da Termodinâmica</b> é, então, uma Lei da Conservação da Energia, podendo ser enunciado: A
@@ -62,25 +63,30 @@
             zero absoluto (“0” na escala Kelvin e “-273.75” em graus Celsius) a entropia dele será constante ou igual a
             zero.</p> <!--paragrafo-->
 
-            <img class="imgs2" src="imagem/3°lei.gif" alt=""> <!--adiciona imagem da terceira lei-->
+        <img class="imgs2" src="imagem/3°lei.gif" alt=""> <!--adiciona imagem da terceira lei-->
 
         <br><br>
         <h1 class="titulo">Fórmulas da Termodinâmica</h1><br>
         <p>Para a execução correta da Teoria da Termodinâmica, é preciso que as fórmulas referentes a cada lei sejam
             aprendidas e compreendidas, para uma precisão exata de cálculo. Sendo assim, para sua total compreensão veja
             a tabela a seguir:</p> <!--paragrafo-->
-            <br><br>
-            <img src="imagem/tabela1.png" alt="" class="imgs2"> <!--adiciona imagem de uma tabela-->
-            <br><br>
-            <img src="imagem/tabela2.png" alt="" class="imgs2"> <!--adiciona imagem de uma tabela-->
-            <br><br>
-            <img src="imagem/tabela3.png" alt="" class="imgs2"> <!--adiciona imagem de uma tabela-->
-            
+        <br><br>
+        <img src="imagem/tabela1.png" alt="" class="imgs2"> <!--adiciona imagem de uma tabela-->
+        <br><br>
+        <img src="imagem/tabela2.png" alt="" class="imgs2"> <!--adiciona imagem de uma tabela-->
+        <br><br>
+        <img src="imagem/tabela3.png" alt="" class="imgs2"> <!--adiciona imagem de uma tabela-->
+
+        <a class="button1" href="questoesobj.html"><button>QUESTOES</button></a>
+
 
     </main>
 
     <footer class="grid_low"> <!--o footer representa a parte inferior do site-->
-        <p id="text_footer"><b>Fontes:</b><br><a href="https://www.todamateria.com.br/termodinamica/">Toda Matéria</a>,<a href="https://mundoeducacao.uol.com.br/fisica/lei-zero-termodinamica.htm">Mundo educação</a>,<a href="https://brasilescola.uol.com.br/fisica/termodinamica.htm">Brasil Escola</a></p> <!--o a href serve para criar um link nesse caso para outra pagina nao pertencente ao site-->
+        <p id="text_footer"><b>Fontes:</b><br><a href="https://www.todamateria.com.br/termodinamica/">Toda
+                Matéria</a>,<a href="https://mundoeducacao.uol.com.br/fisica/lei-zero-termodinamica.htm">Mundo
+                educação</a>,<a href="https://brasilescola.uol.com.br/fisica/termodinamica.htm">Brasil Escola</a></p>
+        <!--o a href serve para criar um link nesse caso para outra pagina nao pertencente ao site-->
     </footer>
 
 </body>
