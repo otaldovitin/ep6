@@ -12,6 +12,7 @@
 
 <body class="grid_mid2" onload="ola_usuario()"> <!--representa o corpo do site-->
     <main id="main"> <!--representa a parte central e principal do site -->
+        <p id="nome_usuario"></p> <!--adiciona o nome selecionado pelo usuario-->
 
         <div class="all-quests"> <!--cria uma divisao-->
             <div class="questoes"> <!--cria a divisao que sera usada para as questoes-->
@@ -21,7 +22,8 @@
                         químicas, pode-se afirmar:</div> <!--enunciado-->
                     <div class="options"> <!--cria uma div aonde ficarao as opçoes a serem selecionadas-->
                         <input type="radio" name="answer1" value="a" id="optionA1"> <label for="optionA1">a) a queima da
-                            parafina de uma vela exemplifica um processo endotérmico.</label> <!--cria uma opção a ser selecinoada-->
+                            parafina de uma vela exemplifica um processo endotérmico.</label>
+                        <!--cria uma opção a ser selecinoada-->
                         <input type="radio" name="answer1" value="b" id="optionB1"> <label for="optionB1">b) a
                             vaporização da água de uma piscina pela ação da luz solar exemplifica um processo
                             endotérmico.</label><!--cria uma opção a ser selecinoada-->
@@ -30,12 +32,14 @@
                         <input type="radio" name="answer1" value="d" id="optionD1"> <label for="optionD1">d) a formação
                             de um iceberg a partir da água do mar exemplifica um processo endotérmico.</label>
                     </div>
-                    <button class="bt-resposta" id="showAnswer1">Revelar Resposta</button> <!--cria um botao para apresentar as respostas quando acionado-->
+                    <button class="bt-resposta" id="showAnswer1">Revelar Resposta</button>
+                    <!--cria um botao para apresentar as respostas quando acionado-->
                     <div class="question-answer"> <!--divisao que apresentara a resposta correta ou incorreta-->
                         <div class="answer-text" id="answer1"></div>
                     </div>
                 </div>
             </div>
+
 
             <div class="questoes">
                 <div class="questoes-header">Pergunta 2</div>
@@ -54,7 +58,8 @@
                         <input type="radio" name="answer2" value="d" id="optionD2"> <label for="optionD2">d) a
                             evaporação da água, um processo endotérmico.</label>
                     </div>
-                    <button class="bt-resposta" id="showAnswer2">Revelar Resposta</button> <!--cria um botao para apresentar as respostas quando acionado-->
+                    <button class="bt-resposta" id="showAnswer2">Revelar Resposta</button>
+                    <!--cria um botao para apresentar as respostas quando acionado-->
                     <div class="question-answer"> <!--divisao que apresentara a resposta correta ou incorreta-->
                         <div class="answer-text" id="answer2"></div>
                     </div>
@@ -76,14 +81,16 @@
                             transformar integralmente em trabalho.</label> <!--cria uma opção a ser selecinoada-->
                         <input type="radio" name="answer3" value="b" id="optionB3"> <label for="optionB3">b) Em uma
                             máquina térmica que opera em ciclos de Carnot, ocorrem duas transformações isobáricas e duas
-                            isovolumétricas.</label> <!--cria uma opção a ser selecinoada, junto do label que gera um enunciado-->
+                            isovolumétricas.</label>
+                        <!--cria uma opção a ser selecinoada, junto do label que gera um enunciado-->
                         <input type="radio" name="answer3" value="c" id="optionC3"> <label for="optionC3">c) No ciclo de
                             Carnot, ocorre uma transformação reversível, enquanto as demais são irreversíveis.</label>
                         <input type="radio" name="answer3" value="d" id="optionD3"> <label for="optionD3">d) O
                             rendimento de uma máquina térmica é nulo quando as etapas do ciclo de Carnot forem
                             transformações reversíveis.</label>
                     </div>
-                    <button class="bt-resposta" id="showAnswer3">Revelar Resposta</button> <!--cria um botao para apresentar as respostas quando acionado-->
+                    <button class="bt-resposta" id="showAnswer3">Revelar Resposta</button>
+                    <!--cria um botao para apresentar as respostas quando acionado-->
                     <div class="question-answer"> <!--divisao que apresentara a resposta correta ou incorreta-->
                         <div class="answer-text" id="answer3"></div>
                     </div>
@@ -106,7 +113,8 @@
                         <input type="radio" name="answer4" value="d" id="optionD4"> <label for="optionD4">d) 108
                             °F</label>
                     </div>
-                    <button class="bt-resposta" id="showAnswer4">Revelar Resposta</button> <!--cria um botao para apresentar as respostas quando acionado-->
+                    <button class="bt-resposta" id="showAnswer4">Revelar Resposta</button>
+                    <!--cria um botao para apresentar as respostas quando acionado-->
                     <div class="question-answer"> <!--divisao que apresentara a resposta correta ou incorreta-->
                         <div class="answer-text" id="answer4"></div>
                     </div>
@@ -128,7 +136,8 @@
                         <input type="radio" name="answer5" value="d" id="optionD5"> <label for="optionD5">d) - 1250
                             J</label>
                     </div>
-                    <button class="bt-resposta" id="showAnswer5">Revelar Resposta</button> <!--cria um botao para apresentar as respostas quando acionado-->
+                    <button class="bt-resposta" id="showAnswer5">Revelar Resposta</button>
+                    <!--cria um botao para apresentar as respostas quando acionado-->
                     <div class="question-answer"> <!--divisao que apresentara a resposta correta ou incorreta-->
                         <div class="answer-text" id="answer5"></div>
                     </div>
@@ -142,7 +151,7 @@
                         da sua fonte quente é de 1200 K, qual deve ser a temperatura da sua fonte fria?</div>
                     <div class="options"> <!--cria uma div aonde ficarao as opçoes a serem selecionadas-->
                         <input type="radio" name="answer6" value="a" id="optionA6"> <label for="optionA6">a) 1200
-                            K</label> <!--cria uma opção a ser selecinoada, junto do label que gera um enunciado--> 
+                            K</label> <!--cria uma opção a ser selecinoada, junto do label que gera um enunciado-->
                         <input type="radio" name="answer6" value="b" id="optionB6"> <label for="optionB6">b) 984
                             K</label> <!--cria uma opção a ser selecinoada, junto do label que gera um enunciado-->
                         <input type="radio" name="answer6" value="c" id="optionC6"> <label for="optionC6">c) 216 K
@@ -150,7 +159,8 @@
                         <input type="radio" name="answer6" value="d" id="optionD6"> <label for="optionD6">d) 179
                             K</label>
                     </div>
-                    <button class="bt-resposta" id="showAnswer6">Revelar Resposta</button> <!--cria um botao para apresentar as respostas quando acionado-->
+                    <button class="bt-resposta" id="showAnswer6">Revelar Resposta</button>
+                    <!--cria um botao para apresentar as respostas quando acionado-->
                     <div class="question-answer"> <!--divisao que apresentara a resposta correta ou incorreta-->
                         <div class="answer-text" id="answer6"></div>
                     </div>
@@ -174,7 +184,8 @@
                         <input type="radio" name="answer7" value="d" id="optionD7"> <label for="optionD7">d) 125
                             K</label>
                     </div>
-                    <button class="bt-resposta" id="showAnswer7">Revelar Resposta</button> <!--cria um botao para apresentar as respostas quando acionado-->
+                    <button class="bt-resposta" id="showAnswer7">Revelar Resposta</button>
+                    <!--cria um botao para apresentar as respostas quando acionado-->
                     <div class="question-answer"> <!--divisao que apresentara a resposta correta ou incorreta-->
                         <div class="answer-text" id="answer7"></div>
                     </div>
@@ -188,7 +199,8 @@
                         da energia interna de um gás nula?</div>
                     <div class="options">
                         <input type="radio" name="answer8" value="a" id="optionA8"> <label for="optionA8">a)
-                            Adiabática.</label> <!--cria uma opção a ser selecinoada, junto do label que gera um enunciado-->
+                            Adiabática.</label>
+                        <!--cria uma opção a ser selecinoada, junto do label que gera um enunciado-->
                         <input type="radio" name="answer8" value="b" id="optionB8"> <label for="optionB8">b) Isotérmica.
 
                         </label> <!--cria uma opção a ser selecinoada, junto do label que gera um enunciado-->
@@ -197,7 +209,8 @@
                         <input type="radio" name="answer8" value="d" id="optionD8"> <label for="optionD8">d)
                             Isovolumétrica.</label>
                     </div>
-                    <button class="bt-resposta" id="showAnswer8">Revelar Resposta</button> <!--cria um botao para apresentar as respostas quando acionado-->
+                    <button class="bt-resposta" id="showAnswer8">Revelar Resposta</button>
+                    <!--cria um botao para apresentar as respostas quando acionado-->
                     <div class="question-answer"> <!--divisao que apresentara a resposta correta ou incorreta-->
                         <div class="answer-text" id="answer8"></div>
                     </div>
@@ -213,7 +226,8 @@
                     </div>
                     <div class="options">
                         <input type="radio" name="answer4" value="a" id="optionA9"> <label for="optionA9">a) Conservação
-                            da temperatura.</label> <!--cria uma opção a ser selecinoada, junto do label que gera um enunciado-->
+                            da temperatura.</label>
+                        <!--cria uma opção a ser selecinoada, junto do label que gera um enunciado-->
                         <input type="radio" name="answer4" value="b" id="optionB9"> <label for="optionB9">b) Zero
                             absoluto.
 
@@ -223,7 +237,8 @@
                         <input type="radio" name="answer4" value="d" id="optionD9"> <label for="optionD9">d) Variação da
                             energia interna.</label>
                     </div>
-                    <button class="bt-resposta" id="showAnswer9">Revelar Resposta</button> <!--cria um botao para apresentar as respostas quando acionado-->
+                    <button class="bt-resposta" id="showAnswer9">Revelar Resposta</button>
+                    <!--cria um botao para apresentar as respostas quando acionado-->
                     <div class="question-answer"> <!--divisao que apresentara a resposta correta ou incorreta-->
                         <div class="answer-text" id="answer9"></div>
                     </div>
@@ -231,7 +246,8 @@
             </div>
 
             <div class="questoes">
-                <div class="questoes-header">Pergunta 10</div> <!--cria uma divisao para expressar o numero da questao-->
+                <div class="questoes-header">Pergunta 10</div>
+                <!--cria uma divisao para expressar o numero da questao-->
                 <div class="question-box"> <!--cria uma divisao aonde fica a questao-->
                     <div class="question-text">Um refrigerador possui uma eficiência de 40% na transferência de 800 J de
                         calor da sua fonte quente para a fonte fria. Para isso, qual deve ser o trabalho realizado por
@@ -248,21 +264,20 @@
 
                         </label>
                     </div>
-                    <button class="bt-resposta" id="showAnswer10">Revelar Resposta</button> <!--cria um botao para apresentar as respostas quando acionado-->
+                    <button class="bt-resposta" id="showAnswer10">Revelar Resposta</button>
+                    <!--cria um botao para apresentar as respostas quando acionado-->
                     <div class="question-answer"> <!--divisao que apresentara a resposta correta ou incorreta-->
                         <div class="answer-text" id="answer10"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
-    <footer> <!--Footer da pagina-->
         <nav class="button2">
-            <a href="questoesdis.html"><button>Questões Discursivas</button></a> <!--redireciona o usuario para a pagina de questoes discursivas-->
+            <a href="questoesdis.html"><button>Questões Discursivas</button></a>
+            <!--redireciona o usuario para a pagina de questoes discursivas-->
+            <a href="index.html" class="botao-redondo">Voltar</a>
         </nav>
-        <br>
-        <p id="nome_usuario"></p> <!--adiciona o nome selecionado pelo usuario-->
-    </footer>
+    </main>
 </body>
 
 <script src="JS/questoesobj.js"></script> <!--adiciona o javascript na pagina-->
