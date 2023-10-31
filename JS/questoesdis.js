@@ -1,37 +1,48 @@
-function showHint(questionNumber) { /*serve para acionar a dica*/
-    const hint = document.getElementById(`hint${questionNumber}`);
-    hint.style.display = 'block';
+// Funções de calculo para cada pergunta
+function calculateWork(questionNumber) { // Calculadora
+    const force = parseFloat(document.getElementById(`force${questionNumber}`).value);
+    const distance = parseFloat(document.getElementById(`distance${questionNumber}`).value);
+    const work = force * distance;
+
+    //Resultado das questões
+    const resultDiv = document.getElementById
+        (`calcWorkResult${questionNumber}`);
+    if (work === 500) { // Resposta correta
+        resultDiv.innerHTML = `Resposta ${questionNumber} (Calculada): ${work} J - Correta!`;
+        resultDiv.style.color = "green";
+    } else { // Reposta errada
+        resultDiv.innerHTML = `Resposta ${questionNumber} (Calculada): ${work} J - Incorreta! A resposta correta de acordo com a fórmula Trabalho = Força x Distância é 500.`;
+        resultDiv.style.color = "red";
+    }
 }
 
-function checkAnswers() {
-    const answer11 = parseFloat(document.getElementById('answer11').value); /*adiciona um valor identificador para acionar uma resposta*/
-    const answer12 = parseFloat(document.getElementById('answer12').value); /*adiciona um valor identificador para acionar uma resposta*/
-    const answer13 = parseFloat(document.getElementById('answer13').value); /*adiciona um valor identificador para acionar uma resposta*/
-    const results = document.getElementById('results');
+function calculateEfficiency(questionNumber) { //Calculadora
+    const workUtil = parseFloat(document.getElementById(`workUtil${questionNumber}`).value);
+    const heatIn = parseFloat(document.getElementById(`heatIn${questionNumber}`).value);
+    const efficiency = (workUtil / heatIn) * 100;
 
-    const correctAnswers = { /*respostas corretas das questoes*/
-        question1: 500, // Resposta correta para a pergunta 1
-        question2: 50,  // Resposta correta para a pergunta 2
-        question3: 800   // Resposta correta para a pergunta 3
-    };
-
-    results.innerHTML = "";
-
-    if (!isNaN(answer11) && answer11 === correctAnswers.question1) { /*resultado para caso a resposta estar correta*/
-        results.innerHTML += "Resposta 1: Correta!<br>";
-    } else { /*resultado para caso a resposta do usuario nao estar igual a resposta da questao*/
-        results.innerHTML += "Resposta 1: Incorreta. A resposta correta de acordo com a fórmula Trabalho = Força x Distância é 500.<br>";
+    const resultDiv = document.getElementById(`calcEfficiencyResult${questionNumber}`);
+    if (efficiency.toFixed(2) === "50.00") { //Resposta correta
+        resultDiv.innerHTML = `Resposta ${questionNumber} (Calculada): ${efficiency.toFixed(2)}% - Correta!`;
+        resultDiv.style.color = "green";
+    } else { // Reposta errada
+        resultDiv.innerHTML = `Resposta ${questionNumber} (Calculada): ${efficiency.toFixed(2)}% - Incorreta! A resposta correta com a formula expressa na dica é 50%.`;
+        resultDiv.style.color = "red";
     }
+}
 
-    if (!isNaN(answer12) && answer12 === correctAnswers.question2) { /*resultado para caso a resposta estar correta*/
-        results.innerHTML += "Resposta 2: Correta!<br>";
-    } else { /*resultado para caso a resposta do usuario nao estar igual a resposta da questao*/
-        results.innerHTML += "Resposta 2: Incorreta. A resposta correta com a formula expressa na dica é 50.<br>";
-    }
+function calculatePressure(questionNumber) {
+    const initialVolume = parseFloat(document.getElementById(`initialVolume${questionNumber}`).value);
+    const finalVolume = parseFloat(document.getElementById(`finalVolume${questionNumber}`).value);
+    const initialPressure = parseFloat(document.getElementById(`initialPressure${questionNumber}`).value);
+    const finalPressure = (initialPressure * initialVolume) / finalVolume;
 
-    if (!isNaN(answer13) && answer13 === correctAnswers.question3) { /*resultado para caso a resposta estar correta*/
-        results.innerHTML += "Resposta 3: Correta!<br>";
-    } else { /*resultado para caso a resposta do usuario nao estar igual a resposta da questao*/
-        results.innerHTML += "Resposta 3: Incorreta. A resposta correta com o uso da a Lei de Boyle-Mariotte: P1 * V1 = P2 * V2. é 800.<br>";
+    const resultDiv = document.getElementById(`calcPressureResult${questionNumber}`);
+    if (finalPressure === 800) { //Resposta correta
+        resultDiv.innerHTML = `Resposta ${questionNumber} (Calculada): ${finalPressure} kPa - Correta!`;
+        resultDiv.style.color = "green";
+    } else { // Reposta errada
+        resultDiv.innerHTML = `Resposta ${questionNumber} (Calculada): ${finalPressure} kPa - Incorreta! A resposta correta com o uso da a Lei de Boyle-Mariotte: P1 * V1 = P2 * V2. é 800.`;
+        resultDiv.style.color = "red";
     }
 }
