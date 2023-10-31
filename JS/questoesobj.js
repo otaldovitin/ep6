@@ -1,10 +1,10 @@
-function ola_usuario(){
+function ola_usuario() {
     var nome_usu = prompt("Escreva seu nome:"); /*gera um prompt a ser preenchido com o nome do usuario*/
-    if(nome_usu){ /*apresenta o nome selecionado ao lado da pagina*/
+    if (nome_usu) { /*apresenta o nome selecionado ao lado da pagina*/
         document.getElementById("nome_usuario").innerHTML = nome_usu;
     }
-    else{ /*opçao caso o usuario nao escrever nada*/
-        alert("escreva seu nome"); 
+    else { /*opçao caso o usuario nao escrever nada*/
+        alert("escreva seu nome");
         ola_usuario();
     }
 }
@@ -12,7 +12,7 @@ function ola_usuario(){
 
 
 // Função para revelar a resposta da pergunta 1
-document.getElementById('showAnswer1').addEventListener('click', function() { /*identificador adicionado para o botao de revelar resposta, para convocar a resposta da questao*/
+document.getElementById('showAnswer1').addEventListener('click', function () { /*identificador adicionado para o botao de revelar resposta, para convocar a resposta da questao*/
     const selectedOption = document.querySelector('input[name="answer1"]:checked');
     const answer1 = document.getElementById('answer1'); /*gera um nome a qual sera usado de identificador para apresentar a resposta*/
 
@@ -26,8 +26,9 @@ document.getElementById('showAnswer1').addEventListener('click', function() { /*
     answer1.style.display = 'block';
 });
 
+
 // Função para revelar a resposta da pergunta 2
-document.getElementById('showAnswer2').addEventListener('click', function() {
+document.getElementById('showAnswer2').addEventListener('click', function () {
     const selectedOption = document.querySelector('input[name="answer2"]:checked');
     const answer2 = document.getElementById('answer2'); /*gera um nome a qual sera usado de identificador para apresentar a resposta*/
 
@@ -42,7 +43,7 @@ document.getElementById('showAnswer2').addEventListener('click', function() {
 });
 
 // Função para revelar a resposta da pergunta 3
-document.getElementById('showAnswer3').addEventListener('click', function() {
+document.getElementById('showAnswer3').addEventListener('click', function () {
     const selectedOption = document.querySelector('input[name="answer3"]:checked');
     const answer3 = document.getElementById('answer3'); /*gera um nome a qual sera usado de identificador para apresentar a resposta*/
 
@@ -56,8 +57,9 @@ document.getElementById('showAnswer3').addEventListener('click', function() {
     answer3.style.display = 'block';
 });
 
+
 // Função para revelar a resposta da pergunta 4
-document.getElementById('showAnswer4').addEventListener('click', function() {
+document.getElementById('showAnswer4').addEventListener('click', function () {
     const selectedOption = document.querySelector('input[name="answer4"]:checked');
     const answer4 = document.getElementById('answer4'); /*gera um nome a qual sera usado de identificador para apresentar a resposta*/
 
@@ -72,7 +74,7 @@ document.getElementById('showAnswer4').addEventListener('click', function() {
 });
 
 // Função para revelar a resposta da pergunta 5
-document.getElementById('showAnswer5').addEventListener('click', function() {
+document.getElementById('showAnswer5').addEventListener('click', function () {
     const selectedOption = document.querySelector('input[name="answer5"]:checked');
     const answer5 = document.getElementById('answer5'); /*gera um nome a qual sera usado de identificador para apresentar a resposta*/
 
@@ -86,8 +88,9 @@ document.getElementById('showAnswer5').addEventListener('click', function() {
     answer5.style.display = 'block';
 });
 
+
 // Função para revelar a resposta da pergunta 6
-document.getElementById('showAnswer6').addEventListener('click', function() {
+document.getElementById('showAnswer6').addEventListener('click', function () {
     const selectedOption = document.querySelector('input[name="answer6"]:checked');
     const answer6 = document.getElementById('answer6'); /*gera um nome a qual sera usado de identificador para apresentar a resposta*/
 
@@ -102,7 +105,7 @@ document.getElementById('showAnswer6').addEventListener('click', function() {
 });
 
 // Função para revelar a resposta da pergunta 7
-document.getElementById('showAnswer7').addEventListener('click', function() {
+document.getElementById('showAnswer7').addEventListener('click', function () {
     const selectedOption = document.querySelector('input[name="answer7"]:checked');
     const answer7 = document.getElementById('answer7'); /*gera um nome a qual sera usado de identificador para apresentar a resposta*/
 
@@ -117,7 +120,7 @@ document.getElementById('showAnswer7').addEventListener('click', function() {
 });
 
 // Função para revelar a resposta da pergunta 8
-document.getElementById('showAnswer8').addEventListener('click', function() {
+document.getElementById('showAnswer8').addEventListener('click', function () {
     const selectedOption = document.querySelector('input[name="answer8"]:checked');
     const answer8 = document.getElementById('answer8'); /*gera um nome a qual sera usado de identificador para apresentar a resposta*/
 
@@ -132,7 +135,7 @@ document.getElementById('showAnswer8').addEventListener('click', function() {
 });
 
 // Função para revelar a resposta da pergunta 9
-document.getElementById('showAnswer9').addEventListener('click', function() {
+document.getElementById('showAnswer9').addEventListener('click', function () {
     const selectedOption = document.querySelector('input[name="answer9"]:checked');
     const answer9 = document.getElementById('answer9'); /*gera um nome a qual sera usado de identificador para apresentar a resposta*/
 
@@ -146,8 +149,9 @@ document.getElementById('showAnswer9').addEventListener('click', function() {
     answer9.style.display = 'block';
 });
 
+
 // Função para revelar a resposta da pergunta 10
-document.getElementById('showAnswer10').addEventListener('click', function() {
+document.getElementById('showAnswer10').addEventListener('click', function () {
     const selectedOption = document.querySelector('input[name="answer10"]:checked');
     const answer10 = document.getElementById('answer10'); /*gera um nome a qual sera usado de identificador para apresentar a resposta*/
 
