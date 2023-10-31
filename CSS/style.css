@@ -9,8 +9,8 @@
     /* Altera a fonte*/
 }
 
-body{
-    background-color: orange; /*define uma cor de fundo*/
+body {
+    background-color: orange; 
     display: grid;
     /* Divide o layout em grade */
     grid-template-columns: auto auto auto auto;
@@ -24,210 +24,337 @@ body{
         "low low low low";
 }
 
-.bodyalt{
+.bodyalt {
     display: flex;
-    background-color: #e2e2e2; /*define a cor do fundo*/
-    justify-content: center; /*justifica o conteudo ao centro da pagina*/
+    background-color: #e2e2e2;
+    /*define a cor do fundo*/
+    justify-content: center;
+    /*justifica o conteudo ao centro da pagina*/
 }
 
-.grid_top button{
-    margin-left: 80rem; /*cria uma margem a esquerda*/
+.grid_top {
+    display: flex;
+
 }
 
-.grid_top img{
-    width: 30rem; /*define o espaço ocupado pela imagem*/
-    
+.grid_top button {
+    margin-left: 80rem;
+    /*cria uma margem a esquerda*/
+}
+
+.grid_top img {
+    width: 30rem;
+    /*define o espaço ocupado pela imagem*/
+
 }
 
 
 
-.grid_mid{
-    
-    grid-area: mid; /* define a area do grid */
-    font-size: 20px;/* tamanho da fonte */
-    text-align: center justify; /* alinha o texto */
-    margin-left: 13%; /* muda a margem da esquerta para 23% */
-    width: 75%; /* tamanho do quadrado onde fica os textos */
-    text-indent: 50px; /* começo de parágrafos */
+.grid_mid {
+
+    grid-area: mid;
+    /* define a area do grid */
+    font-size: 20px;
+    /* tamanho da fonte */
+    text-align: center justify;
+    /* alinha o texto */
+    margin-left: 13%;
+    /* muda a margem da esqueda para 23% */
+    width: 75%;
+    /* tamanho do quadrado onde fica os textos */
+    text-indent: 50px;
+    /* começo de parágrafos */
     border-left: 6px solid black;
     border-right: 6px solid black;
-    padding-left: 2rem; /* espaço entre os textos e a borda na esquerda */
-    padding-right: 2rem; /* espaço entre os textos e a borda na direita */
-    padding-top: 1rem; /* espaço entre os textos e a borda em cima */
-    padding-bottom: 2rem; /* espaço entre os textos e a borda em baixo*/
-    background-color: #e2e2e2; /* cor do fundo do quadrado*/
+    padding-left: 2rem;
+    /* espaço entre os textos e a borda na esquerda */
+    padding-right: 2rem;
+    /* espaço entre os textos e a borda na direita */
+    padding-top: 1rem;
+    /* espaço entre os textos e a borda em cima */
+    padding-bottom: 2rem;
+    /* espaço entre os textos e a borda em baixo*/
+    background-color: #e2e2e2;
+    /* cor do fundo do quadrado*/
 }
 
-.grid_mid2{
-    
-    grid-area: mid; /* define a area do grid */
-    font-size: 20px;/* tamanho da fonte */
-    text-align: center justify; /* alinha o texto */
-    margin-left: 13%; /* muda a margem da esquerta para 23% */
-    width: 75%; /* tamanho do quadrado onde fica os textos */
-    text-indent: 50px; /* começo de parágrafos */
-    padding-left: 2rem; /* espaço entre os textos e a borda na esquerda */
-    padding-right: 2rem; /* espaço entre os textos e a borda na direita */
-    padding-top: 1rem; /* espaço entre os textos e a borda em cima */
-    padding-bottom: 2rem; /* espaço entre os textos e a borda em baixo*/
-    background-color: #e2e2e2; /* cor do fundo do quadrado*/
+.grid_mid2 {
+
+    grid-area: mid;
+    /* define a area do grid */
+    font-size: 20px;
+    /* tamanho da fonte */
+    text-align: center justify;
+    /* alinha o texto */
+    margin-left: 12%;
+    /* muda a margem da esquerta para 23% */
+    width: 75%;
+    /* tamanho do quadrado onde fica os textos */
+    text-indent: 50px;
+    /* começo de parágrafos */
+    padding-left: 2rem;
+    /* espaço entre os textos e a borda na esquerda */
+    padding-right: 2rem;
+    /* espaço entre os textos e a borda na direita */
+    padding-top: 1rem;
+    /* espaço entre os textos e a borda em cima */
+    padding-bottom: 2rem;
+    /* espaço entre os textos e a borda em baixo*/
+    background-color: #e2e2e2;
+    /* cor do fundo do quadrado*/
 }
 
-.grid_top{
-    grid-area: top; /* define a area do grid */
-    display: flex; /*coloca os elementos em disposição flex*/
-    justify-content: center; /*justifica o conteudo no meio*/
-    height: 120px; /*altura do top*/
-    width: 100%; /*define o espaço ocupado pelo top*/
-    border-bottom: 6px solid black; /*cria uma borda com uma cor e uma grossura ja definida*/
-    background-color: rgb(3, 3, 39); /*define uma cor de fundo*/
+.grid_top {
+    grid-area: top;
+    /* define a area do grid */
+    display: flex;
+    /*coloca os elementos em disposição flex*/
+    justify-content: center;
+    /*justifica o conteudo no meio*/
+    height: 120px;
+    /*altura do top*/
+    width: 100%;
+    /*define o espaço ocupado pelo top*/
+    border-bottom: 6px solid black;
+    /*cria uma borda com uma cor e uma grossura ja definida*/
+    background-color: rgb(3, 3, 39);
+    /*define uma cor de fundo*/
 }
 
-.grid_low{
-    grid-area: low; /* define a area do grid */
-    display: flex; /*coloca os elementos em disposição flex*/
-    justify-content: center; /*justifica o conteudo no meio*/
-    height: 120px; /*altura do low*/
-    width: 100%; /*define o espaço ocupado pelo low*/
-    border-top: 6px solid black; /*cria uma borda com uma cor e uma grossura ja definida*/
-    background-color: #e2e2e2; /*define uma cor de fundo*/
-} 
+.grid_low {
+    grid-area: low;
+    /* define a area do grid */
 
-#text_footer{
-    font-size: 24px; /*define um tamanho de fonte*/
+    display: flex;
+    /*coloca os elementos em disposição flex*/
+    justify-content: center;
+    /*justifica o conteudo no meio*/
+    height: 120px;
+    /*altura do low*/
+    width: 100%;
+    /*define o espaço ocupado pelo low*/
+    border-top: 6px solid black;
+    /*define uma cor de fundo*/
+    background-color: rgb(241, 241, 241);
+    /*cria uma borda com uma cor e uma grossura ja definida*/
+}
+
+#text_footer {
+    font-size: 24px;
+    /*define um tamanho de fonte*/
     text-indent: 38%;
-    letter-spacing: 4px; /*define um espaçamento entre as letras*/
+    letter-spacing: 4px;
+    /*define um espaçamento entre as letras*/
 }
 
 
-#img-interativa{
-    padding-left: 34%; /*espaço da imagem da esquerda*/
-    padding-bottom:35px; /*espaço da imagem da parte inferior*/
-    
+#img-interativa {
+    padding-left: 34%;
+    /*espaço da imagem da esquerda*/
+    padding-bottom: 35px;
+    /*espaço da imagem da parte inferior*/
+
 }
 
-.imgs{
-    padding-left: 34%; /*espaço da imagem da esquerda*/
-    padding-bottom:35px; /*espaço da imagem da parte inferior*/
+.imgs {
+    padding-left: 34%;
+    /*espaço da imagem da esquerda*/
+    padding-bottom: 35px;
+    /*espaço da imagem da parte inferior*/
+
 }
 
-.imgs2{
-    width: 80%; /*espaço ocupado pela imagem*/
-    padding-left: 22%; /*espaço da imagem da esquerda*/
-    padding-bottom:35px; /*espaço da imagem da parte inferior*/
+.imgs2 {
+    width: 80%;
+    /*espaço ocupado pela imagem*/
+    padding-left: 22%;
+    /*espaço da imagem da esquerda*/
+    padding-bottom: 35px;
+    /*espaço da imagem da parte inferior*/
 }
 
 /* Questões objetivas*/
 
 
 .all-quests {
-    display: flex; 
-    flex-direction: column; /*coloca a direçao das imagens em flex numa posiçao de coluna
-    margin-top: 25px; /*cria uma margem do topo*/
+    display: flex;
+    flex-direction: column;
+    /*coloca a direçao das imagens em flex numa posiçao de coluna */
+    margin-top: 25px;
+    /*cria uma margem do topo*/
 }
 
 .questoes {
     margin-bottom: 48px;
-    width: 100%; /*define o espaço ocupado*/
-    background-color: white; /*define a cor de fundo*/
+    width: 100%;
+    /*define o espaço ocupado*/
+    background-color: white;
+    /*define a cor de fundo*/
 }
 
 .questoes-header {
-    background-color: #0f94be; /*define a cor de fundo*/
-    color: #fff; /*define a cor das letras*/
-    font-size: 20px; /*define o tamanho da fonte*/
-    font-family: Roboto; /*define a familia da fonte*/
-    padding: 10px 0 10px 15px; /*cria um espaçamento*/
-    border-radius: 12px 12px 0 0; /*arredonda os cantos de uma borda*/
-    height: 60px; /*define a altura*/
+    background-color: #0f94be;
+    /*define a cor de fundo*/
+    color: #fff;
+    /*define a cor das letras*/
+    font-size: 20px;
+    /*define o tamanho da fonte*/
+    font-family: Roboto;
+    /*define a familia da fonte*/
+    padding: 10px 0 10px 15px;
+    /*cria um espaçamento*/
+    border-radius: 12px 12px 0 0;
+    /*arredonda os cantos de uma borda*/
+    height: 60px;
+    /*define a altura*/
     display: flex;
-    align-items: center; /*alinha os itens ao meio*/
+    align-items: center;
+    /*alinha os itens ao meio*/
 }
 
 .question-box {
     display: flex;
-    flex-direction: column; /*posiciona as coisas em coluna*/
+    flex-direction: column;
+    /*posiciona as coisas em coluna*/
     padding: 20px;
-    border: 1px solid #ccc; /*cria uma borda com cor e grossura ja definida*/
-    gap: 15px; /*cria um espaçamento entre as linhas e as colunas do grid*/
+    border: 1px solid #ccc;
+    /*cria uma borda com cor e grossura ja definida*/
+    gap: 15px;
+    /*cria um espaçamento entre as linhas e as colunas do grid*/
 }
 
 .options {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.inputs {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2rem;
+
 }
 
 .question-answer,
 .question-text {
-    height: auto; /*define uma altura*/
+    height: auto;
+    /*define uma altura*/
     display: flex;
     flex-direction: column;
-    width: 100%; /*define um espaçamento total*/
+    width: 100%;
+    /*define um espaçamento total*/
 }
 
 .bt-resposta {
     cursor: pointer;
-    background-color: #f12b63; /*define a cor de fundo*/
-    border-bottom: 3px solid #a40d38; /*define a cor do border bottom e o tamanho tambem*/
-    text-decoration: none; /*impede de adicionar decoraçao ao texto*/
-    font-size: 12px; /*Define o tamanho da fonte*/
-    font-weight: 600; /*define a grossura da fonte*/
-    color: #fff; /*define a cor da fonte*/
+    background-color: #f12b63;
+    /*define a cor de fundo*/
+    border-bottom: 3px solid #a40d38;
+    /*define a cor do border bottom e o tamanho tambem*/
+    text-decoration: none;
+    /*impede de adicionar decoraçao ao texto*/
+    font-size: 12px;
+    /*Define o tamanho da fonte*/
+    font-weight: 600;
+    /*define a grossura da fonte*/
+    color: #fff;
+    /*define a cor da fonte*/
     width: 110px;
     height: 40px;
     display: flex;
     -webkit-box-pack: center;
-    justify-content: center; /*justifica o conteudo ao meio*/
+    justify-content: center;
+    /*justifica o conteudo ao meio*/
     transition: all .5s ease;
-    border-radius: 8px; /*arredonda os cantos de uma borda*/
+    border-radius: 8px;
+    /*arredonda os cantos de uma borda*/
     align-self: end;
 }
 
 .bt-reposta:hover {
-    background-color: #35121f; /*define uma cor de fundo*/ 
-    border-bottom: 3px solid #330915 /*define a cor do border bottom e o tamanho tambem*/
+    background-color: #35121f;
+    /*define uma cor de fundo*/
+    border-bottom: 3px solid #330915
+        /*define a cor do border bottom e o tamanho tambem*/
 }
 
 .question-answer {
     overflow: hidden;
-    height: auto; /*define a altura de algo*/
+    height: auto;
+    /*define a altura de algo*/
     -o-transition: .5s;
     transition: .5s;
     display: flex;
-    flex-direction: column; /*coloca os elementos em coluna*/
+    flex-direction: column;
+    /*coloca os elementos em coluna*/
     width: 100%;
 }
 
 .answer-text {
-    padding: 10px; /*cria um espaçamento*/
-    border: 1px solid #ccc; /*define a cor do border e o tamanho tambem*/
+    padding: 10px;
+    /*cria um espaçamento*/
+    border: 1px solid #ccc;
+    /*define a cor do border e o tamanho tambem*/
+}
+
+.botao-redondo {
+    width: 70px;
+    height: 45px;
+    background-color: #f12b63;
+    border-bottom: 4px solid #a40d38;
+    border-radius: 70%;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    position: relative;
+    left: 68rem;
+}
+
+.botao-redondo2 {
+    width: 70px;
+    height: 45px;
+    background-color: #f12b63;
+    border-bottom: 4px solid #a40d38;
+    border-radius: 70%;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+
 }
 
 .correta {
-    color: green; /*define a cor da letra*/
+    color: green;
+    /*define a cor da letra*/
 }
 
-.incorreta{
-    color: red; /*define a cor da letra*/
+.incorreta {
+    color: red;
+    /*define a cor da letra*/
 }
 
 /* Questões discursivas  */
 .container {
-    max-width: 800px; 
+    max-width: 800px;
     margin: 0 auto;
-    background-color: #fff; /*define a cor de fundo*/
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 h1 {
     text-align: center;
     margin-bottom: 10px;
 }
-#title{
-    background-color: #0f94be; /*define a cor de fundo*/
+
+#title {
+    background-color: #0f94be;
 }
 
 .question {
@@ -235,28 +362,28 @@ h1 {
 }
 
 label {
-    font-weight: bold; /*deixa a fonte em negrito*/
+    font-weight: bold;
 }
 
 input[type="number"] {
-    width: 100%; /*define uma grossura maxima*/
+    width: 100%;
     padding: 5px;
     margin-top: 5px;
 }
 
 button {
-    background-color: #f12b63; /*define a cor de fundo*/
-    color: #fff; /*define a cor da letra*/
+    background-color: #f12b63;
+    color: #fff;
     padding: 10px 20px;
-    border: none; /*cria uma borda em padrao none*/
-    border-radius: 5px; /*arredonda os cantos de uma borda*/
-    cursor: pointer; /*define o formato do cursor*/
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     margin-top: 10px;
-    
+
 }
 
 button:hover {
-    background-color: #35121f; /*define a cor de fundo*/
+    background-color: #35121f;
 }
 
 .hint {
@@ -264,9 +391,93 @@ button:hover {
     margin-top: 10px;
 }
 
-/* Responsividade */
-@media screen and (max-width: 380px){
-    .grid_mid{
+/* Responsividade pagina principal*/
+@media screen and (max-width: 768px) {
+    .grid_top {
+        max-width: auto;
+    }
+
+    main.grid_mid {
+        max-width: 100%;
+        margin-left: 0;
+        text-indent: 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .imgs,
+    .imgs2,
+    #img-interativa {
+        max-width: 81%;
+        display: flex;
+        padding-left: px;
+        padding-right: 1px;
+
+        justify-content: center;
+        height: auto;
+    }
+
+    body {
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    p,
+    h1,
+    h2 {
+        font-size: 1rem;
+        margin-left: 8%;
+        margin-right: 7px;
+    }
+
+    table {
         width: auto;
-    }    
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+}
+
+/* Responsivaidade para questsdis */
+@media screen and (max-width: 768px) {
+    .question {
+        width: 100%;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+
+    .hint {
+        text-align: center;
+    }
+}
+
+/* Responsividade para questsobj */
+@media screen and (max-width: 768px) {
+    .grid_mid {
+        width: 100%;
+    }
+
+    .question-box {
+        padding: 10px;
+    }
+
+    .bt-resposta {
+        width: 100%;
+    }
+
+    .button2 {
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        right: 36px;
+    }
+
+    .question-answer {
+        height: auto;
+    }
+
 }
